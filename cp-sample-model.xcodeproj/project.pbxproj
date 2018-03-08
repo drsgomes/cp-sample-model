@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		99007EFA2050355B003479C6 /* cp_sample_model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99007EF02050355B003479C6 /* cp_sample_model.framework */; };
 		99007F012050355B003479C6 /* cp_sample_model.h in Headers */ = {isa = PBXBuildFile; fileRef = 99007EF32050355B003479C6 /* cp_sample_model.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9939554F20517AB500D3A662 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9939554D20517AB400D3A662 /* LICENSE.txt */; };
+		9939555020517AB500D3A662 /* cp-sample-model.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9939554E20517AB500D3A662 /* cp-sample-model.podspec */; };
 		99C6D083205155F000DCEBF7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C6D082205155F000DCEBF7 /* User.swift */; };
 		99C6D0852051561C00DCEBF7 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C6D0842051561C00DCEBF7 /* Address.swift */; };
 		99C6D087205156E600DCEBF7 /* UserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C6D086205156E600DCEBF7 /* UserTest.swift */; };
@@ -31,6 +33,8 @@
 		99007EF42050355B003479C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99007EF92050355B003479C6 /* cp-sample-modelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cp-sample-modelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99007F002050355B003479C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9939554D20517AB400D3A662 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		9939554E20517AB500D3A662 /* cp-sample-model.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cp-sample-model.podspec"; sourceTree = "<group>"; };
 		99C6D082205155F000DCEBF7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		99C6D0842051561C00DCEBF7 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		99C6D086205156E600DCEBF7 /* UserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTest.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		99007EE62050355B003479C6 = {
 			isa = PBXGroup;
 			children = (
+				9939554E20517AB500D3A662 /* cp-sample-model.podspec */,
+				9939554D20517AB400D3A662 /* LICENSE.txt */,
 				99007EF22050355B003479C6 /* cp-sample-model */,
 				99007EFD2050355B003479C6 /* cp-sample-modelTests */,
 				99007EF12050355B003479C6 /* Products */,
@@ -189,6 +195,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9939554F20517AB500D3A662 /* LICENSE.txt in Resources */,
+				9939555020517AB500D3A662 /* cp-sample-model.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

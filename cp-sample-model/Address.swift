@@ -9,12 +9,13 @@
 import Foundation
 
 public struct Address {
-    let line1 : String
-    let line2 : String
-    let city : String
-    let stateCountyRegionProvince : String
-    let postCode : String
-    let country : String
+    
+    public let line1 : String
+    public let line2 : String
+    public let city : String
+    public let stateCountyRegionProvince : String
+    public let postCode : String
+    public let country : String
     
     public init(line1 : String,
         line2 : String,

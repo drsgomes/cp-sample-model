@@ -9,10 +9,11 @@
 import Foundation
 
 public struct User {
-    let name : String
-    let email : String
-    let password : String
-    let address : Address?
+    
+    public let name : String
+    public let email : String
+    public let password : String
+    public let address : Address?
     
     public init(name : String,
                 email : String,
