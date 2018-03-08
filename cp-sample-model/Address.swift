@@ -15,5 +15,20 @@ public struct Address {
     let stateCountyRegionProvince : String
     let postCode : String
     let country : String
+    
+    public init(line1 : String,
+        line2 : String,
+        city : String,
+        stateCountyRegionProvince : String,
+        postCode : String,
+        country : String){
+        
+        self.line1 = line1
+        self.line2 = line2
+        self.city = city
+        self.stateCountyRegionProvince = stateCountyRegionProvince
+        self.postCode = postCode
+        self.country = country
+    }
 }
 

@@ -13,4 +13,15 @@ public struct User {
     let email : String
     let password : String
     let address : Address?
+    
+    public init(name : String,
+                email : String,
+                password : String,
+                address : Address?){
+        
+        self.name = name
+        self.email = email
+        self.password = password
+        self.address = address
+    }
 }
