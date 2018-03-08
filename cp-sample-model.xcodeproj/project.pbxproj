@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		99007EFA2050355B003479C6 /* cp_sample_model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99007EF02050355B003479C6 /* cp_sample_model.framework */; };
-		99007EFF2050355B003479C6 /* cp_sample_modelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99007EFE2050355B003479C6 /* cp_sample_modelTests.swift */; };
 		99007F012050355B003479C6 /* cp_sample_model.h in Headers */ = {isa = PBXBuildFile; fileRef = 99007EF32050355B003479C6 /* cp_sample_model.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99C6D083205155F000DCEBF7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C6D082205155F000DCEBF7 /* User.swift */; };
+		99C6D0852051561C00DCEBF7 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C6D0842051561C00DCEBF7 /* Address.swift */; };
+		99C6D087205156E600DCEBF7 /* UserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C6D086205156E600DCEBF7 /* UserTest.swift */; };
+		99C6D089205156F000DCEBF7 /* AddressTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C6D088205156F000DCEBF7 /* AddressTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +30,11 @@
 		99007EF32050355B003479C6 /* cp_sample_model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cp_sample_model.h; sourceTree = "<group>"; };
 		99007EF42050355B003479C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99007EF92050355B003479C6 /* cp-sample-modelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cp-sample-modelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		99007EFE2050355B003479C6 /* cp_sample_modelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cp_sample_modelTests.swift; sourceTree = "<group>"; };
 		99007F002050355B003479C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99C6D082205155F000DCEBF7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		99C6D0842051561C00DCEBF7 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		99C6D086205156E600DCEBF7 /* UserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTest.swift; sourceTree = "<group>"; };
+		99C6D088205156F000DCEBF7 /* AddressTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,8 @@
 			children = (
 				99007EF32050355B003479C6 /* cp_sample_model.h */,
 				99007EF42050355B003479C6 /* Info.plist */,
+				99C6D082205155F000DCEBF7 /* User.swift */,
+				99C6D0842051561C00DCEBF7 /* Address.swift */,
 			);
 			path = "cp-sample-model";
 			sourceTree = "<group>";
@@ -80,8 +88,9 @@
 		99007EFD2050355B003479C6 /* cp-sample-modelTests */ = {
 			isa = PBXGroup;
 			children = (
-				99007EFE2050355B003479C6 /* cp_sample_modelTests.swift */,
 				99007F002050355B003479C6 /* Info.plist */,
+				99C6D086205156E600DCEBF7 /* UserTest.swift */,
+				99C6D088205156F000DCEBF7 /* AddressTest.swift */,
 			);
 			path = "cp-sample-modelTests";
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					99007EEF2050355B003479C6 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					99007EF82050355B003479C6 = {
@@ -196,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C6D0852051561C00DCEBF7 /* Address.swift in Sources */,
+				99C6D083205155F000DCEBF7 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99007EFF2050355B003479C6 /* cp_sample_modelTests.swift in Sources */,
+				99C6D089205156F000DCEBF7 /* AddressTest.swift in Sources */,
+				99C6D087205156E600DCEBF7 /* UserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +347,7 @@
 		99007F052050355B003479C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.accela.cp-sample-model";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +370,7 @@
 		99007F062050355B003479C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +392,7 @@
 		99007F082050355B003479C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RLXVBMUF8;
 				INFOPLIST_FILE = "cp-sample-modelTests/Info.plist";
@@ -390,6 +407,7 @@
 		99007F092050355B003479C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RLXVBMUF8;
 				INFOPLIST_FILE = "cp-sample-modelTests/Info.plist";
